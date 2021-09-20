@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  --primary-color: rgb(19, 118, 199);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(212, 212, 203);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-color: blueviolet;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 13em auto;
+}
+
+main > #projects-section,
+#tasks-section {
+  height: 100%;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects-section {
+  background-color: rgb(70, 177, 106);
+}
+
+#tasks-section {
+  background-color: #fefefe;
+}
+
+.task-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.task__input {
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 0.4em;
+  width: 100%;
+  background: transparent;
+}
+
+.task__input::before {
+  content: "hahahah";
+  width: 1em;
+  height: 0.5em;
+}
+
+.task__input:focus {
+  outline: none;
+}
+
+.plus {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+
+  background: linear-gradient(var(--primary-color), var(--primary-color)),
+    linear-gradient(var(--primary-color), var(--primary-color));
+  background-position: center;
+  background-size: 50% 3px, 3px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat: no-repeat;
+}
+
+.task__input:hover {
+  background: #dfdfdfcc;
+}
+
+.task__input::placeholder {
+}
