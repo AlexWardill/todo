@@ -24,10 +24,15 @@
 
       <div class="section" id="tasks-section">
         <h1 class="tasks__project-name">Home</h1>
-        <form class="task-container" onsubmit="return false">
-          <i class="fa fa-user plus"></i>
+        <form
+          class="task-input-container"
+          onsubmit="return false"
+          autocomplete="off"
+        >
+          <i class="plus"></i>
           <input id="task__input" type="text" placeholder="New Task" />
         </form>
+        <div class="task-display"></div>
       </div>
     </main>
     <script src="main.js"></script>

@@ -54,7 +54,7 @@ main > #projects-section,
   background-color: #fefefe;
 }
 
-.task-container {
+.task-input-container {
   width: 60%;
   display: flex;
   align-items: center;
@@ -89,13 +89,54 @@ main > #projects-section,
   background: #dfdfdfcc;
 } */
 
-.task {
+.task-container {
+  margin-top: 0.5em;
+  display: flex;
   width: 60%;
+}
+
+.task-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  border-style: none;
   border-radius: 4px;
   font-size: 1em;
-  padding: 0.4em;
+  padding: 0.2em;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  background: transparent;
+}
+
+.task:focus {
+  outline: none;
 }
 
 .task:hover {
   background: #dfdfdfcc;
+  cursor: text;
+}
+
+.color-box {
+  width: 17px;
+  height: 100%;
+  background: red;
+  border-radius: 3px;
+  display: block;
+  left: 0;
+  margin-right: 0.7em;
+}
+
+.color-box:hover {
+  cursor: pointer;
+  background: rgb(9, 221, 9);
+}
+
+.completed-task {
+  background: rgb(9, 221, 9);
 }
